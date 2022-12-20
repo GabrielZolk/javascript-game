@@ -1,6 +1,7 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe')
 const gameover = document.querySelector('.gameover')
+const reloadButton = document.querySelector('#reloadButton')
 
 
 const jump = () => {
@@ -28,9 +29,18 @@ const loop = setInterval(() => {
         mario.style.marginLeft = '50px'
 
         gameover.style.display = 'flex'
-
+        
+        reloadButton.style.display = 'flex'
+        
         clearInterval(loop);
     }
 }, 10)
 
 document.addEventListener('keydown', jump)
+
+function reloadPage() {
+    location.reload();
+}
+
+document.getElementById("reloadButton").addEventListener("click", reloadPage);
+  
