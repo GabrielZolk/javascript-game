@@ -50,10 +50,10 @@
     border-radius: 5px;
     height: 30px;
     width: 100px;
-    margin: 0 auto;
+    margin: 160px auto 0;
     justify-content: center;
     align-items: center;
-    animation: stop;
+    cursor: pointer;
 }
 
 @keyframes pipe-animation {
@@ -99,15 +99,15 @@
 
 @keyframes gameover {
     0% {
-        margin: 100px auto;
+        margin: 100px auto 0;
     }
     40% {
-        margin: 80px auto;
+        margin: 80px auto 0;
     }
     80% {
-        margin: 120px auto;
+        margin: 120px auto 0 ;
     }
     100% {
-        margin: 100px auto;
+        margin: 100px auto 0;
     }
 }
